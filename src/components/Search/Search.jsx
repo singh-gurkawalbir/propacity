@@ -95,7 +95,6 @@ function Search() {
             <span>First Class</span>
           </div>
         </div>
-
         <div
           data-aos='fade-up'
           data-aos-duration='2000'
@@ -160,8 +159,13 @@ function Search() {
             Show All Flights
           </button>
         </div>
-
-        {showFlightDetails && <FlightSearchResults flights={filteredFlights} />}
+        {showFlightDetails ? (
+          filteredFlights.length > 0 ? (
+            <FlightSearchResults flights={filteredFlights} />
+          ) : (
+            <h3>No flights found</h3>
+          )
+        ) : null}
       </div>
     </div>
   );
