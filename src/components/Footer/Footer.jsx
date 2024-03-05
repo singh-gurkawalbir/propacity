@@ -42,11 +42,8 @@ function Footer() {
               >
                 <HiOutlineMail className='icon' />
               </a>
-              <a href='/resume.pdf'>
-                <BsFillPersonLinesFill
-                  className='icon'
-                  target='_blank'
-                />
+              <a href='/resume.pdf' target='_blank' rel='noreferrer'>
+                <BsFillPersonLinesFill className='icon' />
               </a>
             </div>
           </div>
